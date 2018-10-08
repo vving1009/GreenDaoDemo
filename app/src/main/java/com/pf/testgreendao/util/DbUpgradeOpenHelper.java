@@ -37,5 +37,6 @@ public class DbUpgradeOpenHelper extends DaoMaster.OpenHelper {
                 DaoMaster.dropAllTables(db, ifExists);
             }
         }, UserDao.class);
+        //MigrationHelper2.migrate(db, UserDao.class);
     }
 }
